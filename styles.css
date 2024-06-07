@@ -1,0 +1,79 @@
+/* MATERIAL THEME VARIABLES 
+    --md-sys-color-primary
+    --md-sys-color-on-primary
+    --md-sys-color-primary-container
+    --md-sys-color-on-primary-container
+    --md-sys-color-secondary
+    --md-sys-color-on-secondary
+    --md-sys-color-secondary-container
+    --md-sys-color-on-secondary-container
+    --md-sys-color-tertiary
+    --md-sys-color-on-tertiary
+    --md-sys-color-tertiary-container
+    --md-sys-color-on-tertiary-container
+    --md-sys-color-error
+    --md-sys-color-on-error
+    --md-sys-color-error-container
+    --md-sys-color-on-error-container
+    --md-sys-color-background
+    --md-sys-color-on-background
+    --md-sys-color-surface
+    --md-sys-color-on-surface
+    --md-sys-color-surface-variant
+    --md-sys-color-on-surface-variant
+    --md-sys-color-outline
+    --md-sys-color-outline-variant
+    --md-sys-color-shadow
+    --md-sys-color-scrim
+    --md-sys-color-inverse-surface
+    --md-sys-color-inverse-on-surface
+    --md-sys-color-inverse-primary
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+
+    font-family: 'Hind';
+    background-color: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* NAV DRAWER STYLES */
+.m3-nav-drawer {
+    width: 360px;
+    height: 100vh;
+    padding: 0px 28px 0px 28px;
+
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+/* END */
+
+#main-content{
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    padding: 28px;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px
+}
+
+#main-content section{
+    min-height: 200px;
+    padding: 28px;
+
+    border-radius: 28px;
+    background-color: var(--md-sys-color-surface-container-low);
+}
