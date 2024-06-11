@@ -30,7 +30,7 @@
     --md-sys-color-inverse-primary
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -43,9 +43,9 @@
 body{
     margin: 0;
 
-    font-family: 'Hind';
-    background-color: var(--md-sys-color-surface);
-    color: var(--md-sys-color-on-surface);
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgb(var(--md-sys-color-surface));
+    color: rgb(var(--md-sys-color-on-surface));
 
     display: flex;
     width: 100vw;
@@ -58,11 +58,75 @@ body{
     height: 100vh;
     padding: 0px 28px 0px 28px;
 
-    border-top-right-radius: 28px;
-    border-bottom-right-radius: 28px;
+    /* border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px; */
 
-    background-color: var(--md-sys-color-surface-container-low);
+    background-color: rgb(var(--md-sys-color-surface-container-lowest));
     color: var(--md-sys-color-on-surface-variant);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.m3-nav-drawer a{
+    padding: 28px;
+}
+/* END */
+
+/* BUTTONS */
+.text-button{
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    height: 40px;
+    width: 100%;
+    padding: 0px 12px 0px 16px;
+
+    cursor: pointer;
+    
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+}
+
+.text-button:hover{
+    background-color: rgba(var(--md-sys-color-primary), .08);
+}
+
+.fab{
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    height: 56px;
+    width: 100%;
+    padding: 0px 12px 0px 16px;
+
+    color: rgb(var(--md-sys-color-primary));
+    background-color: rgb(var(--md-sys-color-primary-container));
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px rgba(var(--md-sys-color-shadow), .08);
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.fab:hover{
+    box-shadow: 0px 0px 10px rgba(var(--md-sys-color-shadow), .2);
 }
 /* END */
 
