@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -29,8 +30,8 @@ body{
     /* border-top-right-radius: 28px;
     border-bottom-right-radius: 28px; */
 
-    background-color: rgb(var(--md-sys-color-surface-container-lowest));
-    color: var(--md-sys-color-on-surface-variant);
+    background-color: rgb(var(--md-sys-color-surface-container-low));
+    color: rgb(var(--md-sys-color-on-surface-variant));
 
     display: flex;
     flex-direction: column;
@@ -41,9 +42,49 @@ body{
 .m3-nav-drawer a{
     padding: 28px;
 }
+
+.m3-nav-drawer .fab{
+    width: 100%;
+}
 /* END */
 
 /* BUTTONS */
+button {
+        transition: all 0.2s;
+        position: relative;
+        overflow: hidden;
+        border: none;
+    }
+    button:hover {
+        cursor: pointer;
+    }
+    button::after {
+        display: none;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200%;
+        aspect-ratio: 1 / 1;
+        pointer-events: none;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, .5);
+    }
+    button:focus::after {
+        display: block;
+        animation: scale_up 1000ms forwards;
+    }
+    @keyframes scale_up {
+        0% {
+            transform: translate(-50%, -50%) scale(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(2);
+            opacity: 0;
+        }
+    }
+
 .text-button{
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
@@ -51,11 +92,9 @@ body{
     height: 40px;
     width: 100%;
     padding: 0px 12px 0px 16px;
-
-    cursor: pointer;
     
     background-color: transparent;
-    border: none;
+    
     border-radius: 20px;
 
     display: flex;
@@ -63,28 +102,23 @@ body{
     justify-content: left;
     align-items: center;
     gap: 8px;
-}
-
-.text-button:hover{
-    background-color: rgba(var(--md-sys-color-primary), .08);
-}
-
+    }
+    .text-button:hover{
+        background-color: rgba(var(--md-sys-color-primary), .08);
+    }
+    
 .fab{
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
     height: 56px;
-    width: 100%;
     padding: 0px 12px 0px 16px;
 
     color: rgb(var(--md-sys-color-primary));
     background-color: rgb(var(--md-sys-color-primary-container));
-    border: none;
     border-radius: 16px;
     box-shadow: 0px 0px 10px rgba(var(--md-sys-color-shadow), .08);
-
-    cursor: pointer;
 
     display: flex;
     flex-direction: row;
@@ -92,10 +126,18 @@ body{
     align-items: center;
     gap: 8px;
 }
+    .fab:hover{
+        box-shadow: 0px 0px 10px rgba(var(--md-sys-color-shadow), .2);
+    }
 
-.fab:hover{
-    box-shadow: 0px 0px 10px rgba(var(--md-sys-color-shadow), .2);
+.tonal-icon-button{
+    border-radius: 100%;
+    background-color: rgb(var(--md-sys-color-secondary-container));
+    color: rgb(var(--md-sys-color-on-secondary-container))
 }
+    .tonal-icon-button:hover{
+        filter: brightness(1.05);
+    }
 /* END */
 
 #back-to-top{
@@ -126,10 +168,10 @@ body{
 #main-content section{
     flex: 0 0 auto;
     min-height: 100px;
-    padding: 28px;
+    padding: 12px 28px;
 
-    border-radius: 28px;
-    background-color: var(--md-sys-color-surface-container-low);
+    border-radius: 12px;
+    background-color: rgb(var(--md-sys-color-surface-container-low));
 
     overflow:hidden;
 }
@@ -144,5 +186,37 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#main-conten #hero button{
+    width: 100px;
+}
+/* END */
+
+/* TEXT STYLES */
+h1 {
+   font-family: 'EB Garamond', serif;
+   font-optical-sizing: auto;
+   font-weight: 800;
+   font-style: italic; 
+   font-size: 72px;
+   color: rgb(var(--md-sys-color-on-primary));
+   text-align: center;
+}
+
+h2{
+    font-family: 'EB Garamond', serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(var(--md-sys-color-primary))
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    
 }
 /* END */
