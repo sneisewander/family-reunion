@@ -1,35 +1,3 @@
-/* MATERIAL THEME VARIABLES 
-    --md-sys-color-primary
-    --md-sys-color-on-primary
-    --md-sys-color-primary-container
-    --md-sys-color-on-primary-container
-    --md-sys-color-secondary
-    --md-sys-color-on-secondary
-    --md-sys-color-secondary-container
-    --md-sys-color-on-secondary-container
-    --md-sys-color-tertiary
-    --md-sys-color-on-tertiary
-    --md-sys-color-tertiary-container
-    --md-sys-color-on-tertiary-container
-    --md-sys-color-error
-    --md-sys-color-on-error
-    --md-sys-color-error-container
-    --md-sys-color-on-error-container
-    --md-sys-color-background
-    --md-sys-color-on-background
-    --md-sys-color-surface
-    --md-sys-color-on-surface
-    --md-sys-color-surface-variant
-    --md-sys-color-on-surface-variant
-    --md-sys-color-outline
-    --md-sys-color-outline-variant
-    --md-sys-color-shadow
-    --md-sys-color-scrim
-    --md-sys-color-inverse-surface
-    --md-sys-color-inverse-on-surface
-    --md-sys-color-inverse-primary
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .material-symbols-outlined {
@@ -167,7 +135,7 @@ body{
 }
 
 #main-content #hero{
-    background-image: url('/public/assets/clearwater.jpg');
+    background-image: url('assets/clearwater.webp');
     background-position: center;
 
     height: 600px;
