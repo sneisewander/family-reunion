@@ -9,6 +9,7 @@ $(".m3-nav-drawer .text-button").on("click", (e) => {
         scrollTop: $(`#main-content #${e.target.id}`).offset().top
         + $('#main-content').scrollTop()
         - $('#main-content').offset().top
+        - 14
     },'slow')
 })
 
