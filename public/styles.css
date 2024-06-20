@@ -3,6 +3,7 @@
 
 body{
     margin: 0;
+    transition: .2s;
 
     font-family: 'Noto Sans', sans-serif;
     background-color: rgb(var(--md-sys-color-surface));
@@ -80,7 +81,6 @@ h1 {
  } */
  /* #endregion Typesetting */
  
-
 /* #region Nav Drawer */
 .m3-nav-drawer {
     width: 360px;
@@ -101,10 +101,15 @@ h1 {
 }
 
 .m3-nav-drawer a{
-    padding: 28px;
+    padding: 28px 0px 0px 0px;
+    width: 260px;
 }
 
 .m3-nav-drawer .fab{
+    width: 100%;
+}
+
+.m3-nav-drawer img{
     width: 100%;
 }
 /* #endregion Nav Drawer */
@@ -192,6 +197,23 @@ button {
         box-shadow: 0px 0px 10px rgba(var(--md-sys-color-shadow), .2);
     }
 
+.icon-button{
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 24px;
+    border-radius: 100%;
+    background-color: transparent;
+    color: rgb(var(--md-sys-color-on-surface-variant));
+}
+    .icon-button:hover{
+        filter: brightness(1.05);
+    }
+
 .tonal-icon-button{
     border-radius: 100%;
     background-color: rgb(var(--md-sys-color-secondary-container));
@@ -200,6 +222,19 @@ button {
     .tonal-icon-button:hover{
         filter: brightness(1.05);
     }
+
+
+#back-to-top{
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
+
+    width: 40px;
+    height: 40px;
+    
+    border: 0px;
+    border-radius: 100%;
+}
 /* #endregion Buttons */
 
 /* #region Main Content Styles */
@@ -227,16 +262,21 @@ button {
 }
 
 #main-content #hero{
-    background-image: url('assets/clearwater.webp');
+    background-image: url('assets/hero-section-background.png');
     background-position: center;
     background-size: cover;
 
-    height: 600px;
+    min-height: 60vh;
+    padding: 50px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#main-content #hero h1{
+    color: rgb(var(--md-sys-color-surface));
 }
 
 #main-content #hero button{
@@ -265,21 +305,16 @@ button {
 /* #endregion Main Content Styles */
 
 
-#back-to-top{
-    position: absolute;
-    bottom: 28px;
-    right: 28px;
-
-    width: 40px;
-    height: 40px;
-    
-    border: 0px;
-    border-radius: 100%;
-}
-
 .surface-divider{
     width: auto;
     height: 2px;
     margin: 14px -28px 14px -28px;
     background-color: rgb(var(--md-sys-color-surface));
 }
+
+#settings{
+    display: flex;
+    position: absolute;
+    bottom: 24px;
+}
+
