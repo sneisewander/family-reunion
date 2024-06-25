@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 body{
     margin: 0;
@@ -14,76 +14,10 @@ body{
     height: 100vh;
 }
 
-/* #region Typesetting */
-h1 {
-    font-family: 'EB Garamond', serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: italic; 
-    font-size: 72px;
-    color: rgb(var(--md-sys-color-on-primary));
-    text-align: center;
- }
- 
- h2{
-     font-family: 'EB Garamond', serif;
-     font-optical-sizing: auto;
-     font-weight: 600;
-     font-style: normal;
-     font-size: 28px;
-     margin: 0px;
-     color: rgb(var(--md-sys-color-primary))
- }
- 
- h3{
-     font-family: 'EB Garamond', serif;
-     font-optical-sizing: auto;
-     font-weight: 600;
-     font-style: normal;
-     font-size: 22px;
-     color: rgb(var(--md-sys-color-secondary));
-     margin: 0px;
- }
- 
- p{
-     font-family: 'Noto Sans';
-     font-optical-sizing: auto;
-     font-weight: 400;
-     font-style: normal;
-     font-size: 14px;
-     color: rgb(var(--md-sys-color-on-surface-variant))
- }
- 
- a{
-     text-decoration: none;
-     color: rgb(var(--md-sys-color-primary));
- }
-     a:hover{
-         filter: brightness(1.08)
-     }
- 
- .monospace{
-     font-family: 'Noto', monospace;
- }
- 
- /* .phone-number::before{
-     font-family: 'Material Symbols Rounded';
-     content: "\e0b0";
-     vertical-align: middle;
-     padding-right: 5px;
- }
- 
- .email::before{
-     font-family: 'Material Symbols Rounded';
-     content: "\e158";
-     vertical-align: middle;
-     padding-right: 5px;
- } */
- /* #endregion Typesetting */
- 
 /* #region Nav Drawer */
 .m3-nav-drawer {
-    width: 360px;
+    box-sizing: border-box;
+    min-width: 360px;
     height: 100vh;
     padding: 0px 28px 0px 28px;
 
@@ -253,62 +187,152 @@ button {
 #main-content section{
     flex: 0 0 auto;
     min-height: 100px;
-    padding: 28px;
+    /* padding: 28px; */
 
     border-radius: 12px;
     background-color: rgb(var(--md-sys-color-surface-container-low));
 
+    display: flex;
+    flex-direction: column;
     overflow:hidden;
 }
 
+#main-content section .section-header{
+    width: fit-content;
+    padding: 28px;
+}
+
+#main-content section .section-body{
+    padding: 28px;
+}
+
 #main-content #hero{
-    background-image: url('assets/hero-section-background.webp');
+    background-image: url('../assets/hero-section-background.webp');
     background-position: center;
     background-size: cover;
 
+    color: white;
+
     min-height: 60vh;
-    padding: 50px;
+    padding: 80px 50px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 15px
 }
 
 #main-content #hero h1{
-    color: rgb(var(--md-sys-color-surface));
+    margin: 50px 0 0 0;
+    color: white;
+}
+
+#main-content #hero p{
+    max-width: 800px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
 }
 
 #main-content #hero button{
-    width: 100px;
+    min-width: 300px;
 }
 
-#main-content #faq{
-    display:flex;
+/* #region Itinerary */
+
+#main-content #itinerary #itinerary-body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    padding: 28px;
+}
+
+#main-content #itinerary #itinerary-body .day {
+    background-color: rgb(var(--md-sys-color-surface-container));
+    border-radius: 12px;
+    padding: 14px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#main-content #itinerary #itinerary-body .day .event-header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 22px;;
+}
+
+/* #endregion Itinerary */
+
+#main-content #venue .section-body{
+    padding: 0;
+}
+#main-content #venue .section-body #sandpearl{
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: rgb(var(--md-sys-color-surface-container)); */
+    overflow: hidden;
+}
+
+#main-content #venue .section-body #sandpearl img{
+    border-radius: 12px;
+    width: 100%;
+}
+
+#main-content #venue .section-body #calypso{
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: rgb(var(--md-sys-color-surface-container)); */
+    overflow: hidden;
+}
+
+#main-content #venue .section-body #calypso img{
+    border-radius: 12px;
+    width: 100%;
+}
+
+/* #region FAQ */
+#main-content #faq .section-body{
+    display: flex;
     flex-direction: column;
     gap: 14px;
     padding: 28px;
 }
 
 #main-content #faq .question{
-    background-color: rgb(var(--md-sys-color-secondary-container));
+    background-color: rgb(var(--md-sys-color-surface-container));
     border-radius: 12px;
     padding: 14px;
 }
 
-#main-content #faq .question h3::before{
+#main-content #faq .question p{
+    color: rgb(var(--md-sys-color-on-surface)) ;
+}
+
+#main-content #faq .question h3{
+    color: rgb(var(--md-sys-color-primary)) ;
+}
+
+    #main-content #faq .question h3::before{
     font-family: 'Material Symbols Rounded';
     content: "\e887";
     vertical-align: -11.5%;
     padding-right: 5px;
-}
+    }
+/* #endregion FAQ */
+
 /* #endregion Main Content Styles */
 
 
-.surface-divider{
-    width: auto;
+.section-divider{
+    display: block;
+    width: 100%;
     height: 2px;
-    margin: 14px -28px 14px -28px;
+    /* margin: 14px -28px 14px -28px; */
     background-color: rgb(var(--md-sys-color-surface));
 }
 
@@ -317,4 +341,3 @@ button {
     position: absolute;
     bottom: 24px;
 }
-

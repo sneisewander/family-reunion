@@ -64,3 +64,4 @@ $("#toggle-contrast-mode").on("click", () => {
     else contrastIndex++
     $('body').removeClass().addClass(`${colorMode}${contrastModes[contrastIndex]}`)
 })
+

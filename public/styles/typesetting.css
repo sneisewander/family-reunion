@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'LillyPad';
+    src: url('../fonts/lillypad-webfont.woff2') format('woff2'),
+        url('../fonts/lillypad-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Elsie';
+    src: url('../fonts/elsie-regular-webfont.woff2') format('woff2'),
+        url('../fonts/elsie-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* #region Typesetting */
+h1 {
+    font-family: 'LillyPad';
+    font-size: 72px;
+    color: rgb(var(--md-sys-color-on-primary));
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-family: 'Elsie', serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 28px;
+    margin: 0px;
+    color: rgb(var(--md-sys-color-primary))
+}
+
+h3 {
+    font-family: 'Elsie', serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;
+    color: rgb(var(--md-sys-color-secondary));
+    margin: 0px;
+}
+
+p {
+    font-family: 'Noto Sans';
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(var(--md-sys-color-on-surface-variant))
+}
+
+a {
+    text-decoration: none;
+    color: rgb(var(--md-sys-color-primary));
+}
+
+a:hover {
+    filter: brightness(1.08)
+}
+
+.monospace {
+    font-family: 'Noto', monospace;
+}
+
+/* .phone-number::before{
+     font-family: 'Material Symbols Rounded';
+     content: "\e0b0";
+     vertical-align: middle;
+     padding-right: 5px;
+ }
+ 
+ .email::before{
+     font-family: 'Material Symbols Rounded';
+     content: "\e158";
+     vertical-align: middle;
+     padding-right: 5px;
+ } */
+/* #endregion Typesetting */

@@ -1,3 +1,4 @@
 node_modules
 firebase-debug.log
-.firebase
+.firebase/*
+.firebase/hosting.cHVibGlj.cache
