@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" type="text/css" href="styles/colors.css" />
     <link rel="stylesheet" href="styles/typesetting.css">
+    <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
 
@@ -115,38 +116,60 @@
                 <div id="sandpearl">
                     <div>
                         <h3>Sandpearl Resort</h3>
-                        <button class="filled-icon-button"
-                            onclick="window.open('https://www.opalcollection.com/sandpearl/').focus();">
-                            <span class="material-symbols-rounded">open_in_new</span> Visit Site
-                        </button>
-                        <span>500 Mandalay Ave, Clearwater Beach, FL 33767</span>
+                        <i>500 Mandalay Ave, Clearwater Beach, FL 33767</i>
+                        <p>
+                            <blockquote>
+                                Our recently renovated 253 guest rooms and suites evoke the relaxed essence of our Gulf
+                                Coast setting. Comfort meets style with sunny Floridian-inspired decor and private balconies with sweeping views of Clearwater, Mandalay Bay, and the Gulf of Mexico. Our suites feature full kitchens, dining rooms, and furnished balconies. Sandpearl's laid-back elegance is an ideal home base for your next beach vacation, romantic escape, business trip, or family gathering.
+                                <span>— Sandpearl website.</span>
+                            </blockquote>
+                        </p>
+
+                        <div id="button-container" class="flex-container-row">
+                            <button class="filled-button"
+                                onclick="window.open('https://www.opalcollection.com/sandpearl/').focus();">
+                                <span class="material-symbols-rounded">open_in_new</span> Website
+                            </button>
+
+                            <button class="outlined-button"
+                                onclick="window.open('https://maps.app.goo.gl/iMzZjNJaGprpLfgH9').focus();">
+                                <span class="material-symbols-rounded">travel_explore</span> Map
+                            </button>
+                        </div>
+
                     </div>
 
-                    <img src="./assets/clearwater2.webp" />
+                    <span id="image"></span>
                 </div>
 
                 <span class="section-divider"></span>
 
                 <div id="calypso">
                     <div>
-                        <p>Our Tropical Buffet Cruise will be aboard the Calypso Queen! Yadayada write something here.
+                        <h3>Calypso Queen</h3>
+                        <p>Our Tropical Buffet Cruise will be aboard the Calypso Queen!
                         </p>
-
+                        <blockquote>
+                            The Calypso Queen, a 65-foot triple decked ship, specifically designed for cruising in the intracoastal waterways, offers casual sightseeing, luncheon and dinner cruises. This colorfully appointed vessel with a Caribbean theme, boasts 2 dining levels that are enclosed, air-conditioned and contain guest seating. The third level is an open-air deck that serves a variety of functions and provides beautiful views of the passing waterfront. The vessel is complete with restrooms on both dining levels, two full service bars, full service galley and state of the art sound system.
+                            <span>— Calypso website.</span>
+                        </blockquote>
                         <p>The Queen has limited capacity, so RSVP to book your spot today!</p>
 
-                        <button class="filled-icon-button"
+                        
+                        <div class="flex-container-row">
+                            <button class="filled-button"
                             onclick="window.open('https://www.starlitecruises.com/fleet/calypso-queen.html').focus();">
-                            <span class="material-symbols-rounded">open_in_new</span> Learn more
+                            <span class="material-symbols-rounded">open_in_new</span> Website
                         </button>
 
-                        <button class="outlined-icon-button"
-                            onclick="window.open('assets/Queen_Description.pdf').focus();">
+                        <button class="outlined-button" onclick="window.open('assets/Queen_Description.pdf').focus();">
                             <span class="material-symbols-rounded">open_in_new</span> Info PDF
                         </button>
+                        </div>
                     </div>
 
 
-                    <img src="./assets/clearwater2.webp" />
+                    <span id="image"></span>
                 </div>
             </div>
         </section>
@@ -158,10 +181,64 @@
             <span class="section-divider"></span>
 
             <div class="section-body" id="travel-body">
+                <div id="st-pete">
+                    <div>
+                        <h3>St. Pete-Clearwater International Airport</h3>
+                        <i></i>
+                        <p>
+                            <blockquote>
+                                Our recently renovated 253 guest rooms and suites evoke the relaxed essence of our Gulf
+                                Coast setting. Comfort meets style with sunny Floridian-inspired decor and private balconies with sweeping views of Clearwater, Mandalay Bay, and the Gulf of Mexico. Our suites feature full kitchens, dining rooms, and furnished balconies. Sandpearl's laid-back elegance is an ideal home base for your next beach vacation, romantic escape, business trip, or family gathering.
+                                <span>— Sandpearl website.</span>
+                            </blockquote>
+                        </p>
 
-                St. Pete-Clearwater International Airport (PIE) is about 15 miles from the resort
+                        <div id="button-container" class="flex-container-row">
+                            <button class="filled-button"
+                                onclick="window.open('https://fly2pie.com/').focus();">
+                                <span class="material-symbols-rounded">open_in_new</span> Website
+                            </button>
 
-                Tampa International Airport (TPA) is 23 miles from the resort
+                            <button class="outlined-button"
+                                onclick="window.open('https://maps.app.goo.gl/4HmGzDenddnLe15W7').focus();">
+                                <span class="material-symbols-rounded">travel_explore</span> Map
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <span id="image"></span>
+                </div>
+
+                <span class="section-divider"></span>
+
+                <div id="tampa">
+                    <div>
+                        <h3>Tampa International Airport</h3>
+                        <p>Our Tropical Buffet Cruise will be aboard the Calypso Queen!
+                        </p>
+                        <blockquote>
+                            The Calypso Queen, a 65-foot triple decked ship, specifically designed for cruising in the intracoastal waterways, offers casual sightseeing, luncheon and dinner cruises. This colorfully appointed vessel with a Caribbean theme, boasts 2 dining levels that are enclosed, air-conditioned and contain guest seating. The third level is an open-air deck that serves a variety of functions and provides beautiful views of the passing waterfront. The vessel is complete with restrooms on both dining levels, two full service bars, full service galley and state of the art sound system.
+                            <span>— Calypso website.</span>
+                        </blockquote>
+                        <p>The Queen has limited capacity, so RSVP to book your spot today!</p>
+
+                        
+                        <div class="flex-container-row">
+                            <button class="filled-button"
+                            onclick="window.open('https://www.tampaairport.com/').focus();">
+                            <span class="material-symbols-rounded">open_in_new</span> Website
+                        </button>
+
+                        <button class="outlined-button" onclick="window.open('https://maps.app.goo.gl/XWuTiyjLN3YaJ4279').focus();">
+                            <span class="material-symbols-rounded">travel_explore</span> Map
+                        </button>
+                        </div>
+                    </div>
+
+
+                    <span id="image"></span>
+                </div>
             </div>
         </section>
 

@@ -48,129 +48,6 @@ body{
 }
 /* #endregion Nav Drawer */
 
-/* #region Buttons */
-button {
-        transition: all 0.2s;
-        position: relative;
-        overflow: hidden;
-        border: none;
-    }
-    button:hover {
-        cursor: pointer;
-    }
-    button::after {
-        display: none;
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 200%;
-        aspect-ratio: 1 / 1;
-        pointer-events: none;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, .5);
-    }
-    button:focus::after {
-        display: block;
-        animation: scale_up 1000ms forwards;
-    }
-    @keyframes scale_up {
-        0% {
-            transform: translate(-50%, -50%) scale(0);
-            opacity: 1;
-        }
-        100% {
-            transform: translate(-50%, -50%) scale(2);
-            opacity: 0;
-        }
-    }
-
-.text-button{
-    box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-    height: 40px;
-    width: 100%;
-    padding: 0px 12px 0px 16px;
-    
-    background-color: transparent;
-    color: rgb(var(--md-sys-color-on-surface));
-    
-    border-radius: 20px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    gap: 8px;
-    }
-    .text-button:hover{
-        background-color: rgba(var(--md-sys-color-primary), .08);
-    }
-    
-.fab{
-    box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    height: 56px;
-    padding: 0px 12px 0px 16px;
-
-    color: rgb(var(--md-sys-color-on-primary));
-    background-color: rgb(var(--md-sys-color-primary));
-    border-radius: 16px;
-    box-shadow: 0px 0px 10px rgba(var(--md-sys-color-shadow), .08);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-    .fab:hover{
-        box-shadow: 0px 0px 10px rgba(var(--md-sys-color-shadow), .2);
-    }
-
-.icon-button{
-    width: 40px;
-    height: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    font-size: 24px;
-    border-radius: 100%;
-    background-color: transparent;
-    color: rgb(var(--md-sys-color-on-surface-variant));
-}
-    .icon-button:hover{
-        filter: brightness(1.05);
-    }
-
-.tonal-icon-button{
-    border-radius: 100%;
-    background-color: rgb(var(--md-sys-color-secondary-container));
-    color: rgb(var(--md-sys-color-on-secondary-container))
-}
-    .tonal-icon-button:hover{
-        filter: brightness(1.05);
-    }
-
-
-#back-to-top{
-    position: absolute;
-    bottom: 28px;
-    right: 28px;
-
-    width: 40px;
-    height: 40px;
-    
-    border: 0px;
-    border-radius: 100%;
-}
-/* #endregion Buttons */
-
 /* #region Main Content Styles */
 #main-content{
     width: 100%;
@@ -266,9 +143,12 @@ button {
 
 /* #endregion Itinerary */
 
+/* #region Venue */
+
 #main-content #venue .section-body{
     padding: 0;
 }
+
 #main-content #venue .section-body #sandpearl{
     padding: 28px;
     display: grid;
@@ -277,9 +157,11 @@ button {
     overflow: hidden;
 }
 
-#main-content #venue .section-body #sandpearl img{
+#main-content #venue .section-body #sandpearl #image{
+    background-image: url('../assets/sandpearl-resort.jpg');
+    background-position: center;
+    background-size: cover;
     border-radius: 12px;
-    width: 100%;
 }
 
 #main-content #venue .section-body #calypso{
@@ -294,6 +176,40 @@ button {
     border-radius: 12px;
     width: 100%;
 }
+
+#main-content #venue .section-body #calypso #image{
+    background-image: url('../assets/calypso.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+/* #endregion Venue */
+
+/* #region Travel */
+
+#main-content #travel .section-body{
+    padding: 0;
+}
+
+#main-content #travel .section-body #st-pete{
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: rgb(var(--md-sys-color-surface-container)); */
+    overflow: hidden;
+}
+
+#main-content #travel .section-body #tampa{
+    padding: 28px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: rgb(var(--md-sys-color-surface-container)); */
+    overflow: hidden;
+}
+
+
+/* #endregion Travel */
 
 /* #region FAQ */
 #main-content #faq .section-body{
@@ -340,4 +256,10 @@ button {
     display: flex;
     position: absolute;
     bottom: 24px;
+}
+
+.flex-container-row{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
 }

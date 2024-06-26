@@ -68,6 +68,37 @@ a:hover {
     font-family: 'Noto', monospace;
 }
 
+blockquote{
+    font-size: 14px;
+    font-family: 'Noto Sans';
+    font-style:italic;
+    padding:1.2em 30px 1.2em 75px;
+    border-left: 4px solid rgb(var(--md-sys-color-secondary)) ;
+    line-height:1.6;
+    position: relative;
+  }
+  
+  blockquote::before{
+    font-family: 'Elsie';
+    content: "\201C";
+    color:rgb(var(--md-sys-color-secondary));
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+  }
+  
+  blockquote::after{
+    content: '';
+  }
+  
+  blockquote span{
+    display:block;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:1em;
+  }
+
 /* .phone-number::before{
      font-family: 'Material Symbols Rounded';
      content: "\e0b0";
