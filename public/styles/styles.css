@@ -208,7 +208,6 @@ body{
     overflow: hidden;
 }
 
-
 /* #endregion Travel */
 
 /* #region FAQ */
@@ -241,15 +240,22 @@ body{
     }
 /* #endregion FAQ */
 
-/* #endregion Main Content Styles */
-
-
 .section-divider{
     display: block;
     width: 100%;
     height: 2px;
     /* margin: 14px -28px 14px -28px; */
     background-color: rgb(var(--md-sys-color-surface));
+}
+
+.spacer {
+    width: 100%;
+    height: 12px;
+}
+
+.subsection{
+    display: flex;
+    flex-direction: column;
 }
 
 #settings{
@@ -263,3 +269,7 @@ body{
     flex-direction: row;
     gap: 12px;
 }
+
+/* #endregion Main Content Styles */
+
+
