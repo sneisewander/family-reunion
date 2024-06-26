@@ -1,3 +1,28 @@
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1]);
+        }
+    }
+    console.log('Query variable %s not found', variable);
+}
+
+let section = getQueryVariable('section')
+
+if (section){
+    $('#main-content').stop(true,false).animate({
+        // Finds the distance between the top and the target, then the distance between the top and the current position, then scrolls the difference between those two.
+        // Also substracts 14 pixels to adjust for padding.
+        scrollTop: $(`#main-content #${section}`).offset().top
+        + $('#main-content').scrollTop()
+        - $('#main-content').offset().top
+        - 14
+    },'slow')
+}
+
 $("#back-to-top").on("click", () => {
     $('#main-content').animate({
         scrollTop: $("#main-content").offset().top
@@ -17,6 +42,25 @@ $(".m3-nav-drawer .text-button").on("click", (e) => {
 
 $("button").on("animationend", (e) => {
     $(e.target).blur() // blur method unfocuses an element. this makes the animation repeatable on a single element multiple times in succession. 
+})
+
+// Section Links
+
+$('.link-copy').on('mouseenter', (e) => {
+    $(e.target).children('span').removeClass('hidden').html('link')
+})
+
+$('.link-copy').on('mouseleave', (e) => {
+    $(e.target).children('span').addClass('hidden')
+})
+
+$('.link-copy').on('click', (e) => {
+    $(e.target).hasClass('link-copy') ? $(e.target).children('span').text('check') : $(e.target).parent().children('span').text('check')
+
+    let section = $(e.target).hasClass('link-copy') ? $(e.target).parent().attr('id') : $(e.target).parent().parent().attr('id')
+
+
+    navigator.clipboard.writeText('https://raynorreunion.com/?section=' + section)
 })
 
 //Settings

@@ -75,6 +75,10 @@ body{
 }
 
 #main-content section .section-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
     width: fit-content;
     padding: 28px;
 }
@@ -272,4 +276,16 @@ body{
 
 /* #endregion Main Content Styles */
 
+.link-copy{
+    cursor: pointer;
+}
 
+.link-copy .material-symbols-rounded{
+    transition: .2s;
+    color: rgb(var(--md-sys-color-on-surface-variant))
+}
+
+.hidden{
+    transition: .2s;
+    color: transparent !important;
+}
