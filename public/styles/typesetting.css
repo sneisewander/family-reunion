@@ -20,10 +20,11 @@
 /* #region Typesetting */
 h1 {
     font-family: 'LillyPad';
-    font-size: 72px;
+    font-size: 4rem;
     color: rgb(var(--md-sys-color-on-primary));
     text-align: center;
     letter-spacing: 5px;
+    pointer-events: none;
 }
 
 h2 {
@@ -31,9 +32,10 @@ h2 {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 28px;
+    font-size: 2rem;
     margin: 0px;
-    color: rgb(var(--md-sys-color-primary))
+    color: rgb(var(--md-sys-color-primary));
+    pointer-events: none;
 }
 
 h3 {
@@ -41,9 +43,10 @@ h3 {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 22px;
+    font-size: 1.5rem;
     color: rgb(var(--md-sys-color-secondary));
     margin: 0px;
+    pointer-events: none;
 }
 
 p {
@@ -51,7 +54,7 @@ p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 14px;
+    font-size: 1rem;
     color: rgb(var(--md-sys-color-on-surface-variant))
 }
 
@@ -69,12 +72,12 @@ a:hover {
 }
 
 blockquote{
-    font-size: 14px;
+    font-size: 1rem;
     font-family: 'Noto Sans';
     font-style:italic;
     padding:1.2em 30px 1.2em 75px;
     border-left: 4px solid rgb(var(--md-sys-color-secondary)) ;
-    line-height:1.6;
+    line-height: 1.6;
     position: relative;
   }
   
@@ -99,6 +102,9 @@ blockquote{
     margin-top:1em;
   }
 
+  sup{
+    font-size: .8rem;
+  }
 /* .phone-number::before{
      font-family: 'Material Symbols Rounded';
      content: "\e0b0";

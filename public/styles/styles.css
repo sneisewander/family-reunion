@@ -110,7 +110,7 @@ body{
 }
 
 #main-content #hero p{
-    max-width: 800px;
+    max-width: 650px;
     text-align: center;
     font-size: 18px;
     color: white;
@@ -122,27 +122,20 @@ body{
 
 /* #region Itinerary */
 
-#main-content #itinerary #itinerary-body{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
+#main-content #itinerary .section-body{
     padding: 28px;
-}
-
-#main-content #itinerary #itinerary-body .day {
-    background-color: rgb(var(--md-sys-color-surface-container));
-    border-radius: 12px;
-    padding: 14px;
-
     display: flex;
     flex-direction: column;
 }
 
-#main-content #itinerary #itinerary-body .day .event-header{
+#main-content #itinerary .section-body #days{
     display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 22px;;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+#main-content #itinerary .section-body #days div{
+    width: fit-content;
 }
 
 /* #endregion Itinerary */
@@ -198,16 +191,12 @@ body{
 
 #main-content #travel .section-body #st-pete{
     padding: 28px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     /* background-color: rgb(var(--md-sys-color-surface-container)); */
     overflow: hidden;
 }
 
 #main-content #travel .section-body #tampa{
     padding: 28px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     /* background-color: rgb(var(--md-sys-color-surface-container)); */
     overflow: hidden;
 }
@@ -223,9 +212,11 @@ body{
 }
 
 #main-content #faq .question{
+    overflow-y: hidden;
     background-color: rgb(var(--md-sys-color-surface-container));
     border-radius: 12px;
     padding: 14px;
+    height: 26px;
 }
 
 #main-content #faq .question p{
@@ -250,6 +241,7 @@ body{
     height: 2px;
     /* margin: 14px -28px 14px -28px; */
     background-color: rgb(var(--md-sys-color-surface));
+    padding: 0;
 }
 
 .spacer {
@@ -271,6 +263,7 @@ body{
 .flex-container-row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 12px;
 }
 
@@ -282,10 +275,24 @@ body{
 
 .link-copy .material-symbols-rounded{
     transition: .2s;
+    color: rgb(var(--md-sys-color-on-surface-variant));
+    pointer-events: none;
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdown .material-symbols-rounded{
+    transition: .2s;
     color: rgb(var(--md-sys-color-on-surface-variant))
 }
 
 .hidden{
     transition: .2s;
     color: transparent !important;
+}
+
+.rotate90{
+    transform: rotate(90deg)
 }

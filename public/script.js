@@ -55,12 +55,39 @@ $('.link-copy').on('mouseleave', (e) => {
 })
 
 $('.link-copy').on('click', (e) => {
-    $(e.target).hasClass('link-copy') ? $(e.target).children('span').text('check') : $(e.target).parent().children('span').text('check')
+    // css rule 'pointer-events' will control which elements can fire this callback
+    $(e.target).children('span').text('check')
 
-    let section = $(e.target).hasClass('link-copy') ? $(e.target).parent().attr('id') : $(e.target).parent().parent().attr('id')
-
+    let section = $(e.target).parent().attr('id')
 
     navigator.clipboard.writeText('https://raynorreunion.com/?section=' + section)
+})
+
+// Dropdown Clickys
+
+$('.dropdown').on('mouseenter', (e) => {
+    // arrow_drop_down
+    $(e.target).children('span').removeClass('hidden')
+})
+
+$('.dropdown').on('mouseleave', (e) => {
+    $(e.target).children('span').addClass('hidden')
+})
+
+$('.dropdown').on('click', (e) => {
+    // css rule 'pointer-events' will control which elements can fire this callback
+    if ($(e.target).children('span').hasClass('rotate90')) {
+        $(e.target).children('span').removeClass('rotate90')
+        $(e.target).parent().animate({height: $(e.target).css('height')}, 'fast')
+    }
+    else{
+        $(e.target).children('span').addClass('rotate90')
+        $(e.target).parent().animate({height: $(e.target).outerHeight(true) + $(e.target).siblings('p').outerHeight(true)}, 'fast')
+    }
+    
+    
+
+    let section = $(e.target).parent().attr('id')
 })
 
 //Settings

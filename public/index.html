@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/typesetting.css">
     <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mobile.css">
 </head>
 
 <body>
@@ -58,11 +59,14 @@
     <div id="main-content">
 
         <section id="hero">
-            <h1>Raynor Worldwide <br>Family Reunion 2025: <br>Clearwater Beach</h1>
-            <p>We are excited to invite you to our 2025 family reunion — tropical oasis style! This is more than a
-                gathering; it's a celebration of our shared roots and a chance to reconnect with family near and far. So
+            <h1>Family Reunion 2025: <br>Clearwater Beach</h1>
+            <p>
+                We are excited to invite you to our 2025 family reunion — tropical oasis style! <br>This is more than a
+                gathering; it's a celebration of our shared roots <br>and a chance to reconnect with family near and
+                far. <br>So
                 pack your flip-flops and luau shirts, and get ready create some unforgettable memories under the Florida
-                sun. See you in paradise!</p>
+                sun. <br>See you in paradise!
+            </p>
             <button class="fab"
                 onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSewuNMdtPGjpjvq2SZM5xnUB8ts9bG2otZVztcpxnhIYF74DA/viewform?usp=sf_link', '_blank').focus();">
                 <span class="material-symbols-rounded">group_add</span> RSVP
@@ -78,18 +82,22 @@
             <span class="section-divider"></span>
 
             <div class="section-body" id="itinerary-body">
+                <!-- <h3>June 2025</h3>
+                <span class="section-divider"></span>
                 <div class="day">
                     <h3 class="event-header"><span class="monospace">12</span>Thursday</h3>
                     <ul class="event-container">
                         <li>Optional Early Arrival</li>
                     </ul>
                 </div>
+                <span class="section-divider"></span>
                 <div class="day">
                     <h3 class="event-header"><span class="monospace">13</span>Friday</h3>
                     <ul class="event-container">
                         <li>Welcome Celebration</li>
                     </ul>
                 </div>
+                <span class="section-divider"></span>
                 <div class="day">
                     <h3 class="event-header"><span class="monospace">14</span>Saturday</h3>
                     <ul class="event-container">
@@ -97,13 +105,50 @@
                         <li>Tropical Buffet Cruise</li>
                     </ul>
                 </div>
+                <span class="section-divider"></span>
                 <div class="day">
                     <h3 class="event-header"><span class="monospace">15</span>Sunday</h3>
                     <ul class="event-container">
                         <li>Catholic Mass</li>
                         <li>Father's Day Brunch</li>
                     </ul>
+                </div> -->
+
+                <h2>June 2025</h2>
+                <br>
+
+                <div id="days">
+                    <div>
+                        <h3>Thursday, June 12<sup>th</sup></h3>
+                        <ul>
+                            <li>Optional Early Arrival</li>
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <h3>Friday, June 13<sup>th</sup></h3>
+                        <ul>
+                            <li>Welcome Celebration</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>Saturday, June 14<sup>th</sup></h3>
+                        <ul>
+                            <li>Shareholder Orientation and Update Meeting</li>
+                            <li>Tropical Buffet Cruise</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3>Sunday, June 15<sup>th</sup></h3>
+                        <ul>
+                            <li>Catholic Mass</li>
+                            <li>Father's Day Brunch</li>
+                        </ul>
+                    </div>
                 </div>
+                
             </div>
         </section>
 
@@ -120,11 +165,15 @@
                         <h3>Sandpearl Resort</h3>
                         <i>500 Mandalay Ave, Clearwater Beach, FL 33767</i>
                         <p>
-                            <blockquote>
-                                Our recently renovated 253 guest rooms and suites evoke the relaxed essence of our Gulf
-                                Coast setting. Comfort meets style with sunny Floridian-inspired decor and private balconies with sweeping views of Clearwater, Mandalay Bay, and the Gulf of Mexico. Our suites feature full kitchens, dining rooms, and furnished balconies. Sandpearl's laid-back elegance is an ideal home base for your next beach vacation, romantic escape, business trip, or family gathering.
-                                <span>— Sandpearl website.</span>
-                            </blockquote>
+                        <blockquote>
+                            Our recently renovated 253 guest rooms and suites evoke the relaxed essence of our Gulf
+                            Coast setting. Comfort meets style with sunny Floridian-inspired decor and private balconies
+                            with sweeping views of Clearwater, Mandalay Bay, and the Gulf of Mexico. Our suites feature
+                            full kitchens, dining rooms, and furnished balconies. Sandpearl's laid-back elegance is an
+                            ideal home base for your next beach vacation, romantic escape, business trip, or family
+                            gathering.
+                            <!-- <span>— Sandpearl website.</span> -->
+                        </blockquote>
                         </p>
 
                         <div id="button-container" class="flex-container-row">
@@ -136,6 +185,11 @@
                             <button class="outlined-button"
                                 onclick="window.open('https://maps.app.goo.gl/iMzZjNJaGprpLfgH9').focus();">
                                 <span class="material-symbols-rounded">travel_explore</span> Map
+                            </button>
+
+                            <button class="outlined-button"
+                                onclick="window.open('tel:815-440-2149').focus();">
+                                <span class="material-symbols-rounded">phone</span> Call <span class="monospace">727-441-2425</span>
                             </button>
                         </div>
 
@@ -152,13 +206,19 @@
                         <p>Our Tropical Buffet Cruise will be aboard the Calypso Queen!
                         </p>
                         <blockquote>
-                            The Calypso Queen, a 65-foot triple decked ship, specifically designed for cruising in the intracoastal waterways, offers casual sightseeing, luncheon and dinner cruises. This colorfully appointed vessel with a Caribbean theme, boasts 2 dining levels that are enclosed, air-conditioned and contain guest seating. The third level is an open-air deck that serves a variety of functions and provides beautiful views of the passing waterfront. The vessel is complete with restrooms on both dining levels, two full service bars, full service galley and state of the art sound system.
-                            <span>— Calypso website.</span>
+                            The Calypso Queen, a 65-foot triple decked ship, specifically designed for cruising in the
+                            intracoastal waterways, offers casual sightseeing, luncheon and dinner cruises. This
+                            colorfully appointed vessel with a Caribbean theme, boasts 2 dining levels that are
+                            enclosed, air-conditioned and contain guest seating. The third level is an open-air deck
+                            that serves a variety of functions and provides beautiful views of the passing waterfront.
+                            The vessel is complete with restrooms on both dining levels, two full service bars, full
+                            service galley and state of the art sound system.
+                            <!-- <span>— Calypso website.</span> -->
                         </blockquote>
                         <p>The Queen has limited capacity, so RSVP to book your spot today!</p>
 
-                        
-                        <div class="flex-container-row">
+
+                        <!-- <div class="flex-container-row">
                             <button class="filled-button"
                             onclick="window.open('https://www.starlitecruises.com/fleet/calypso-queen.html').focus();">
                             <span class="material-symbols-rounded">open_in_new</span> Website
@@ -167,7 +227,7 @@
                         <button class="outlined-button" onclick="window.open('assets/Queen_Description.pdf').focus();">
                             <span class="material-symbols-rounded">open_in_new</span> Info PDF
                         </button>
-                        </div>
+                        </div> -->
                     </div>
 
 
@@ -190,8 +250,7 @@
                         <i>About 15 miles from Sandpearl Resort.</i>
                         <br>
                         <div id="button-container" class="flex-container-row">
-                            <button class="filled-button"
-                                onclick="window.open('https://fly2pie.com/').focus();">
+                            <button class="filled-button" onclick="window.open('https://fly2pie.com/').focus();">
                                 <span class="material-symbols-rounded">open_in_new</span> Website
                             </button>
 
@@ -213,13 +272,14 @@
                         <br>
                         <div class="flex-container-row">
                             <button class="filled-button"
-                            onclick="window.open('https://www.tampaairport.com/').focus();">
-                            <span class="material-symbols-rounded">open_in_new</span> Website
-                        </button>
+                                onclick="window.open('https://www.tampaairport.com/').focus();">
+                                <span class="material-symbols-rounded">open_in_new</span> Website
+                            </button>
 
-                        <button class="outlined-button" onclick="window.open('https://maps.app.goo.gl/XWuTiyjLN3YaJ4279').focus();">
-                            <span class="material-symbols-rounded">travel_explore</span> Map
-                        </button>
+                            <button class="outlined-button"
+                                onclick="window.open('https://maps.app.goo.gl/XWuTiyjLN3YaJ4279').focus();">
+                                <span class="material-symbols-rounded">travel_explore</span> Map
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -247,14 +307,15 @@
 
             <div class="section-body">
                 <div class="question">
-                    <h3>Who is invited?</h3>
+                    <div class="flex-container-row dropdown"><h3>Who is invited?</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
                     <p>All Neisewander family members - direct descendants of Ray Neisewander, Sr., spouses, and adopted
                         family members. Those eligible for a hotel room include family member shareholders and
                         heir-apparent
                         family members, age 18 and older.</p>
                 </div>
                 <div class="question">
-                    <h3>What is the cost?</h3>
+                    <div class="flex-container-row dropdown"><h3>What is the cost?</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
+                    
                     <p>Raynor will cover the cost of your stay at the Sandpearl Resort from June 13 – June 15, 2025 and
                         all Family Reunion events. Raynor will provide a $350 travel stipend and a $100 activity voucher
                         for family shareholders and those eligible for the heir-apparent program. Cost to family members
@@ -262,31 +323,38 @@
                         to do in Clearwater outside of Family Reunion events.</p>
                 </div>
                 <div class="question">
-                    <h3>Who is an "heir-apparent" family member?</h3>
+                    <div class="flex-container-row dropdown"><h3>Who is an "heir-apparent" family member?</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
+                    
                     <p>Lineal descendants of Ray Neisewander, Sr. age 18 and older who are not currently shareholders,
                         but
                         may one day become future shareholders of Raynor stock.</p>
                 </div>
                 <div class="question">
-                    <h3>What if I want to extend my stay?</h3>
+                    <div class="flex-container-row dropdown"><h3>What if I want to extend my stay?</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
+                    
                     <p>We have a limited number of rooms available for early arrival Thursday, June 12, 2025. Please
                         indicate your desire for early arrival in the registration form. Your $350 travel stipend will
                         be used toward the additional hotel night if you opt to arrive early. Family members will be
                         responsible for accommodations after Sunday, June 15, 2025.</p>
                 </div>
                 <div class="question">
-                    <h3>Who is invited to the shareholder orientation and shareholder update meeting?
-                    </h3>
-                    <p>ALL family members and spouses are invited and encouraged to attend the shareholder orientation and update meetings! Shareholder Orientation is a good refresher for both new and legacy shareholders.</p>
+                    <div class="flex-container-row dropdown"><h3>Who is invited to the shareholder orientation and shareholder update meeting?
+                    </h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
+                    
+                    <p>ALL family members and spouses are invited and encouraged to attend the shareholder orientation
+                        and update meetings! Shareholder Orientation is a good refresher for both new and legacy
+                        shareholders.</p>
                 </div>
                 <div class="question">
-                    <h3>Who should I contact if I have further questions?</h3>
-                    <p>Please direct questions to Family Council Chair, Corey Reuter at <a class="email"
+                    <div class="flex-container-row dropdown"><h3>Who should I contact if I have further questions?</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
+                    
+                    <p>Please direct questions to Family Council Chair, Corey Reuter at <a
                             href="mailto:reuter_67@yahoo.com">reuter_67@yahoo.com</a> or <a
-                            class="monospace phone-number" href="tel:815-440-2149">815-440-2149</a>.</p>
+                            class="monospace" href="tel:815-440-2149">815-440-2149</a>.</p>
                 </div>
                 <div class="question">
-                    <h3>What do I do next?!</h3>
+                    <div class="flex-container-row dropdown"><h3>What do I do next?!</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
+                    
                     <p>Register via this website! To RSVP for the Family Reunion, please complete the registration form
                         on
                         this website — this will help us reserve the correct number of rooms and ensure we plan
