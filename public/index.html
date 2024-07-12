@@ -81,57 +81,23 @@
             </div>
             <span class="section-divider"></span>
 
-            <div class="section-body" id="itinerary-body">
-                <!-- <h3>June 2025</h3>
-                <span class="section-divider"></span>
-                <div class="day">
-                    <h3 class="event-header"><span class="monospace">12</span>Thursday</h3>
-                    <ul class="event-container">
-                        <li>Optional Early Arrival</li>
-                    </ul>
-                </div>
-                <span class="section-divider"></span>
-                <div class="day">
-                    <h3 class="event-header"><span class="monospace">13</span>Friday</h3>
-                    <ul class="event-container">
-                        <li>Welcome Celebration</li>
-                    </ul>
-                </div>
-                <span class="section-divider"></span>
-                <div class="day">
-                    <h3 class="event-header"><span class="monospace">14</span>Saturday</h3>
-                    <ul class="event-container">
-                        <li>Shareholder Orientation and Update Meeting</li>
-                        <li>Tropical Buffet Cruise</li>
-                    </ul>
-                </div>
-                <span class="section-divider"></span>
-                <div class="day">
-                    <h3 class="event-header"><span class="monospace">15</span>Sunday</h3>
-                    <ul class="event-container">
-                        <li>Catholic Mass</li>
-                        <li>Father's Day Brunch</li>
-                    </ul>
-                </div> -->
-
+            <div id="itinerary-body">
                 <h2>June 2025</h2>
-                <br>
-
-                <div id="days">
+                <div id="itinerary-days">
                     <div>
                         <h3>Thursday, June 12<sup>th</sup></h3>
                         <ul>
                             <li>Optional Early Arrival</li>
                         </ul>
                     </div>
-    
+
                     <div>
                         <h3>Friday, June 13<sup>th</sup></h3>
                         <ul>
                             <li>Welcome Celebration</li>
                         </ul>
                     </div>
-                    
+
                     <div>
                         <h3>Saturday, June 14<sup>th</sup></h3>
                         <ul>
@@ -139,7 +105,7 @@
                             <li>Tropical Buffet Cruise</li>
                         </ul>
                     </div>
-                    
+
                     <div>
                         <h3>Sunday, June 15<sup>th</sup></h3>
                         <ul>
@@ -148,7 +114,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
@@ -159,8 +125,8 @@
             </div>
             <span class="section-divider"></span>
 
-            <div class="section-body" id="venue-body">
-                <div id="sandpearl">
+            <div id="venue-body">
+                <div id="sandpearl" class="image-subsection">
                     <div>
                         <h3>Sandpearl Resort</h3>
                         <i>500 Mandalay Ave, Clearwater Beach, FL 33767</i>
@@ -187,20 +153,21 @@
                                 <span class="material-symbols-rounded">travel_explore</span> Map
                             </button>
 
-                            <button class="outlined-button"
-                                onclick="window.open('tel:815-440-2149').focus();">
-                                <span class="material-symbols-rounded">phone</span> Call <span class="monospace">727-441-2425</span>
+                            <button class="outlined-button" onclick="window.open('tel:815-440-2149').focus();">
+                                <span class="material-symbols-rounded">phone</span> Call <span
+                                    class="monospace">727-441-2425</span>
                             </button>
                         </div>
 
                     </div>
 
-                    <span id="image"></span>
+                    <img src="./assets/sandpearl-resort.jpg"
+                        alt="An aerial of the Sandpearl Resort, with palm trees, a beach, the ocean, and a swimming pool visible.">
                 </div>
 
                 <span class="section-divider"></span>
 
-                <div id="calypso">
+                <div id="calypso" class="image-subsection">
                     <div>
                         <h3>Calypso Queen</h3>
                         <p>Our Tropical Buffet Cruise will be aboard the Calypso Queen!
@@ -216,22 +183,8 @@
                             <!-- <span>— Calypso website.</span> -->
                         </blockquote>
                         <p>The Queen has limited capacity, so RSVP to book your spot today!</p>
-
-
-                        <!-- <div class="flex-container-row">
-                            <button class="filled-button"
-                            onclick="window.open('https://www.starlitecruises.com/fleet/calypso-queen.html').focus();">
-                            <span class="material-symbols-rounded">open_in_new</span> Website
-                        </button>
-
-                        <button class="outlined-button" onclick="window.open('assets/Queen_Description.pdf').focus();">
-                            <span class="material-symbols-rounded">open_in_new</span> Info PDF
-                        </button>
-                        </div> -->
                     </div>
-
-
-                    <span id="image"></span>
+                    <img src="./assets/calypso.jpg" alt="A large, colorful dinner cruise ship sailing on the ocean.">
                 </div>
             </div>
         </section>
@@ -243,44 +196,39 @@
             </div>
             <span class="section-divider"></span>
 
-            <div class="section-body" id="travel-body">
-                <div id="st-pete">
-                    <div class="subsection">
-                        <h3>St. Pete-Clearwater International Airport</h3>
-                        <i>About 15 miles from Sandpearl Resort.</i>
-                        <br>
-                        <div id="button-container" class="flex-container-row">
-                            <button class="filled-button" onclick="window.open('https://fly2pie.com/').focus();">
-                                <span class="material-symbols-rounded">open_in_new</span> Website
-                            </button>
+            <div id="travel-body">
+                <div id="st-pete" class="subsection">
+                    <h3>St. Pete-Clearwater International Airport</h3>
+                    <i>About 15 miles from Sandpearl Resort.</i>
+                    <br>
+                    <div id="button-container" class="flex-container-row">
+                        <button class="filled-button" onclick="window.open('https://fly2pie.com/').focus();">
+                            <span class="material-symbols-rounded">open_in_new</span> Website
+                        </button>
 
-                            <button class="outlined-button"
-                                onclick="window.open('https://maps.app.goo.gl/4HmGzDenddnLe15W7').focus();">
-                                <span class="material-symbols-rounded">travel_explore</span> Map
-                            </button>
-                        </div>
-
+                        <button class="outlined-button"
+                            onclick="window.open('https://maps.app.goo.gl/4HmGzDenddnLe15W7').focus();">
+                            <span class="material-symbols-rounded">travel_explore</span> Map
+                        </button>
                     </div>
+
                 </div>
 
                 <span class="section-divider"></span>
 
-                <div id="tampa">
-                    <div class="subsection">
-                        <h3>Tampa International Airport</h3>
-                        <i>About 23 miles from Sandpearl Resort.</i>
-                        <br>
-                        <div class="flex-container-row">
-                            <button class="filled-button"
-                                onclick="window.open('https://www.tampaairport.com/').focus();">
-                                <span class="material-symbols-rounded">open_in_new</span> Website
-                            </button>
+                <div id="tampa" class="subsection">
+                    <h3>Tampa International Airport</h3>
+                    <i>About 23 miles from Sandpearl Resort.</i>
+                    <br>
+                    <div class="flex-container-row">
+                        <button class="filled-button" onclick="window.open('https://www.tampaairport.com/').focus();">
+                            <span class="material-symbols-rounded">open_in_new</span> Website
+                        </button>
 
-                            <button class="outlined-button"
-                                onclick="window.open('https://maps.app.goo.gl/XWuTiyjLN3YaJ4279').focus();">
-                                <span class="material-symbols-rounded">travel_explore</span> Map
-                            </button>
-                        </div>
+                        <button class="outlined-button"
+                            onclick="window.open('https://maps.app.goo.gl/XWuTiyjLN3YaJ4279').focus();">
+                            <span class="material-symbols-rounded">travel_explore</span> Map
+                        </button>
                     </div>
                 </div>
             </div>
@@ -293,7 +241,49 @@
             </div>
             <span class="section-divider"></span>
 
-            <div class="section-body">
+            <div id="explore-body">
+                <div id="aquarium" class="image-subsection">
+                    <div>
+                        <h3>Clearwater Marine Aquarium</h3>
+                        <i>249 Windward Passage, Clearwater, FL 33767</i>
+                        <p>
+                            Clearwater Marine Aquarium currently is home to North American river otters, Atlantic
+                            bottlenose dolphins, Rough-toothed dolphins, green sea turtles, Kemp's ridley sea turtles,
+                            cownose rays, southern stingrays, nurse sharks, great white pelicans, and other fish,
+                            including gag, hogfish, and red drum! The acquarium is a non-profit organization dedicated
+                            to the rescue, rehabilitation and release of sick and injured marine animals, public
+                            education, conservation, and research.
+                        </p>
+
+                        <div class="chips">
+                            <div class="chip" id="price">
+                                <span class="material-symbols-rounded">paid</span>
+                                <span class="monospace">$45</span>
+                            </div>
+                        </div>
+
+                        <div id="button-container" class="flex-container-row">
+                            <button class="filled-button" onclick="window.open('https://www.cmaquarium.org/').focus();">
+                                <span class="material-symbols-rounded">open_in_new</span> Website
+                            </button>
+
+                            <button class="outlined-button"
+                                onclick="window.open('https://maps.app.goo.gl/Cj5HqjHvTodf3Er17').focus();">
+                                <span class="material-symbols-rounded">travel_explore</span> Map
+                            </button>
+
+                            <button class="outlined-button" onclick="window.open('tel:172-7441-1790').focus();">
+                                <span class="material-symbols-rounded">phone</span> Call <span
+                                    class="monospace">172-7441-1790</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <span id="image"></span>
+                </div>
+
+                <span class="section-divider"></span>
 
             </div>
         </section>
@@ -305,17 +295,21 @@
             </div>
             <span class="section-divider"></span>
 
-            <div class="section-body">
+            <div id="faq-body">
                 <div class="question">
-                    <div class="flex-container-row dropdown"><h3>Who is invited?</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
+                    <div class="flex-container-row dropdown">
+                        <h3>Who is invited?</h3><span class="material-symbols-rounded hidden">arrow_right</span>
+                    </div>
                     <p>All Neisewander family members - direct descendants of Ray Neisewander, Sr., spouses, and adopted
                         family members. Those eligible for a hotel room include family member shareholders and
                         heir-apparent
                         family members, age 18 and older.</p>
                 </div>
                 <div class="question">
-                    <div class="flex-container-row dropdown"><h3>What is the cost?</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
-                    
+                    <div class="flex-container-row dropdown">
+                        <h3>What is the cost?</h3><span class="material-symbols-rounded hidden">arrow_right</span>
+                    </div>
+
                     <p>Raynor will cover the cost of your stay at the Sandpearl Resort from June 13 – June 15, 2025 and
                         all Family Reunion events. Raynor will provide a $350 travel stipend and a $100 activity voucher
                         for family shareholders and those eligible for the heir-apparent program. Cost to family members
@@ -323,38 +317,51 @@
                         to do in Clearwater outside of Family Reunion events.</p>
                 </div>
                 <div class="question">
-                    <div class="flex-container-row dropdown"><h3>Who is an "heir-apparent" family member?</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
-                    
+                    <div class="flex-container-row dropdown">
+                        <h3>Who is an "heir-apparent" family member?</h3><span
+                            class="material-symbols-rounded hidden">arrow_right</span>
+                    </div>
+
                     <p>Lineal descendants of Ray Neisewander, Sr. age 18 and older who are not currently shareholders,
                         but
                         may one day become future shareholders of Raynor stock.</p>
                 </div>
                 <div class="question">
-                    <div class="flex-container-row dropdown"><h3>What if I want to extend my stay?</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
-                    
+                    <div class="flex-container-row dropdown">
+                        <h3>What if I want to extend my stay?</h3><span
+                            class="material-symbols-rounded hidden">arrow_right</span>
+                    </div>
+
                     <p>We have a limited number of rooms available for early arrival Thursday, June 12, 2025. Please
                         indicate your desire for early arrival in the registration form. Your $350 travel stipend will
                         be used toward the additional hotel night if you opt to arrive early. Family members will be
                         responsible for accommodations after Sunday, June 15, 2025.</p>
                 </div>
                 <div class="question">
-                    <div class="flex-container-row dropdown"><h3>Who is invited to the shareholder orientation and shareholder update meeting?
-                    </h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
-                    
+                    <div class="flex-container-row dropdown">
+                        <h3>Who is invited to the shareholder orientation and shareholder update meeting?
+                        </h3><span class="material-symbols-rounded hidden">arrow_right</span>
+                    </div>
+
                     <p>ALL family members and spouses are invited and encouraged to attend the shareholder orientation
                         and update meetings! Shareholder Orientation is a good refresher for both new and legacy
                         shareholders.</p>
                 </div>
                 <div class="question">
-                    <div class="flex-container-row dropdown"><h3>Who should I contact if I have further questions?</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
-                    
+                    <div class="flex-container-row dropdown">
+                        <h3>Who should I contact if I have further questions?</h3><span
+                            class="material-symbols-rounded hidden">arrow_right</span>
+                    </div>
+
                     <p>Please direct questions to Family Council Chair, Corey Reuter at <a
-                            href="mailto:reuter_67@yahoo.com">reuter_67@yahoo.com</a> or <a
-                            class="monospace" href="tel:815-440-2149">815-440-2149</a>.</p>
+                            href="mailto:reuter_67@yahoo.com">reuter_67@yahoo.com</a> or <a class="monospace"
+                            href="tel:815-440-2149">815-440-2149</a>.</p>
                 </div>
                 <div class="question">
-                    <div class="flex-container-row dropdown"><h3>What do I do next?!</h3><span class="material-symbols-rounded hidden">arrow_right</span></div>
-                    
+                    <div class="flex-container-row dropdown">
+                        <h3>What do I do next?!</h3><span class="material-symbols-rounded hidden">arrow_right</span>
+                    </div>
+
                     <p>Register via this website! To RSVP for the Family Reunion, please complete the registration form
                         on
                         this website — this will help us reserve the correct number of rooms and ensure we plan
