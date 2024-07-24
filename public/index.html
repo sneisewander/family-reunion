@@ -75,7 +75,7 @@
         </section>
 
         <section id="itinerary">
-            <div class="section-header link-copy">
+            <div class="section-header link-copy" title="Copy link to this section">
                 <h2>Itinerary</h2>
                 <span class="material-symbols-rounded hidden">link</span>
             </div>
@@ -119,7 +119,7 @@
         </section>
 
         <section id="venue">
-            <div class="section-header link-copy">
+            <div class="section-header link-copy" title="Copy link to this section">
                 <h2>Venue</h2>
                 <span class="material-symbols-rounded hidden">link</span>
             </div>
@@ -161,8 +161,7 @@
 
                     </div>
 
-                    <img src="./assets/sandpearl-resort.jpg"
-                        alt="An aerial of the Sandpearl Resort, with palm trees, a beach, the ocean, and a swimming pool visible.">
+                    <span class="subsection-image" id="sandpearl-image"></span>
                 </div>
 
                 <span class="section-divider"></span>
@@ -184,13 +183,13 @@
                         </blockquote>
                         <p>The Queen has limited capacity, so RSVP to book your spot today!</p>
                     </div>
-                    <img src="./assets/calypso.jpg" alt="A large, colorful dinner cruise ship sailing on the ocean.">
+                    <span class="subsection-image" id="calypso-image"></span>
                 </div>
             </div>
         </section>
 
         <section id="travel">
-            <div class="section-header link-copy">
+            <div class="section-header link-copy" title="Copy link to this section">
                 <h2>Travel</h2>
                 <span class="material-symbols-rounded hidden">link</span>
             </div>
@@ -198,9 +197,12 @@
 
             <div id="travel-body">
                 <div id="st-pete" class="subsection">
-                    <h3>St. Pete-Clearwater International Airport</h3>
-                    <i>About 15 miles from Sandpearl Resort.</i>
-                    <br>
+                    <div>
+                        <h3>St. Pete-Clearwater International Airport</h3>
+                        <i>About 15 miles from Sandpearl Resort.</i>
+                    </div>
+                    
+
                     <div id="button-container" class="flex-container-row">
                         <button class="filled-button" onclick="window.open('https://fly2pie.com/').focus();">
                             <span class="material-symbols-rounded">open_in_new</span> Website
@@ -217,9 +219,11 @@
                 <span class="section-divider"></span>
 
                 <div id="tampa" class="subsection">
-                    <h3>Tampa International Airport</h3>
-                    <i>About 23 miles from Sandpearl Resort.</i>
-                    <br>
+                    <div>
+                        <h3>Tampa International Airport</h3>
+                        <i>About 23 miles from Sandpearl Resort.</i>
+                    </div>
+
                     <div class="flex-container-row">
                         <button class="filled-button" onclick="window.open('https://www.tampaairport.com/').focus();">
                             <span class="material-symbols-rounded">open_in_new</span> Website
@@ -235,7 +239,7 @@
         </section>
 
         <section id="explore">
-            <div class="section-header link-copy">
+            <div class="section-header link-copy" title="Copy link to this section">
                 <h2>Explore Clearwater</h2>
                 <span class="material-symbols-rounded hidden">link</span>
             </div>
@@ -243,9 +247,15 @@
 
             <div id="explore-body">
                 <div id="aquarium" class="image-subsection">
-                    <div>
+                    <div class="subsection-body">
                         <h3>Clearwater Marine Aquarium</h3>
                         <i>249 Windward Passage, Clearwater, FL 33767</i>
+
+                        <div class="booking-warning">
+                            <span class="material-symbols-rounded">warning</span>
+                            This experience requires advance booking.
+                        </div>
+
                         <p>
                             Clearwater Marine Aquarium currently is home to North American river otters, Atlantic
                             bottlenose dolphins, Rough-toothed dolphins, green sea turtles, Kemp's ridley sea turtles,
@@ -256,9 +266,25 @@
                         </p>
 
                         <div class="chips">
-                            <div class="chip" id="price">
-                                <span class="material-symbols-rounded">paid</span>
-                                <span class="monospace">$45</span>
+                            <div class="chip" id="price" title="Approximate price per person">
+                                <span class="material-symbols-rounded">attach_money</span>
+                                <span class="monospace">45 / head</span>
+                            </div>
+                            <div class="chip" id="duration" title="Approximate duration of experience">
+                                <span class="material-symbols-rounded">timer</span>
+                                <span class="monospace">1-3 hrs</span>
+                            </div>
+                            <div class="chip" id="distance" title="Distance from Sandpearl Resort">
+                                <span class="material-symbols-rounded">distance</span>
+                                <span class="monospace">1.3 miles</span>
+                            </div>
+                            <div class="chip" id="walk-time" title="Travel time on foot">
+                                <span class="material-symbols-rounded">directions_walk</span>
+                                <span class="monospace">30 min</span>
+                            </div>
+                            <div class="chip" id="drive-time" title="Travel time by car">
+                                <span class="material-symbols-rounded">directions_car</span>
+                                <span class="monospace">10 min</span>
                             </div>
                         </div>
 
@@ -280,15 +306,301 @@
 
                     </div>
 
-                    <span id="image"></span>
+                    <span class="subsection-image" id="aquarium-image" title="really cool dolphin"></span>
                 </div>
 
                 <span class="section-divider"></span>
 
+                <div id="segway" class="image-subsection">
+                    <div class="subsection-body">
+                        <h3>The Segway Adventure</h3>
+                        <i>630 S. Gulfview Blvd, Clearwater, FL 33767</i>
+
+                        <div class="booking-warning">
+                            <span class="material-symbols-rounded">warning</span>
+                            This experience requires advance booking.
+                        </div>
+
+                        <p>
+                            <i>N.B. — May also be called "Clearwater Segway Tours" or "Magic Carpet Glide Segway Tours".</i>
+                            <br><br>
+                            Discover Clearwater Beach on a Segway and experience the ultimate high-tech ride while taking in the sights along the beautiful pristine beaches of Clearwater Beach. Take a journey with Clearwater's first and premier Segway Tour Company. It's great fun for friends and families too!
+                        </p>
+
+                        <div class="chips">
+                            <div class="chip" id="price" title="Approximate price per person">
+                                <span class="material-symbols-rounded">attach_money</span>
+                                <span class="monospace">65 / head</span>
+                            </div>
+                            <div class="chip" id="duration" title="Approximate duration of experience">
+                                <span class="material-symbols-rounded">timer</span>
+                                <span class="monospace">2-3 hrs</span>
+                            </div>
+                            <div class="chip" id="distance" title="Distance from Sandpearl Resort">
+                                <span class="material-symbols-rounded">distance</span>
+                                <span class="monospace">1.2 miles</span>
+                            </div>
+                            <div class="chip" id="walk-time" title="Travel time on foot">
+                                <span class="material-symbols-rounded">directions_walk</span>
+                                <span class="monospace">30 min</span>
+                            </div>
+                            <div class="chip" id="drive-time" title="Travel time by car">
+                                <span class="material-symbols-rounded">directions_car</span>
+                                <span class="monospace">10 min</span>
+                            </div>
+                        </div>
+
+                        <div id="button-container" class="flex-container-row">
+                            <button class="filled-button" onclick="window.open('https://thesegwayadventure.com/').focus();">
+                                <span class="material-symbols-rounded">open_in_new</span> Website
+                            </button>
+
+                            <button class="outlined-button"
+                                onclick="window.open('https://maps.app.goo.gl/DqxsDB5a8LeD9Z6R8').focus();">
+                                <span class="material-symbols-rounded">travel_explore</span> Map
+                            </button>
+
+                            <button class="outlined-button" onclick="window.open('tel:727-314-8224').focus();">
+                                <span class="material-symbols-rounded">phone</span> Call <span
+                                    class="monospace">727-314-8224</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <span class="subsection-image" id="segway-image"></span>
+                </div>
+
+                <span class="section-divider"></span>
+
+                <div id="escape-room" class="image-subsection">
+                    <div class="subsection-body">
+                        <h3>The Exit Games | Escape Room</h3>
+                        <i>620 Lakeview Rd, Clearwater, FL 33756</i>
+
+                        <div class="booking-warning">
+                            <span class="material-symbols-rounded">warning</span>
+                            This experience requires advance booking.
+                        </div>
+
+                        <p>
+                            Tampa Bay's newest and most immersive escape rooms! Introducing Clearwater's only 90-minute escape adventure recently voted the 2020 World's Best Escape Room. Looking for a not-your-average attraction for family, friends, or corporate entertainment? Immerse yourself into 90 minutes of electrifying amusement! You and your team must use your wits and teamwork to break down the clues and puzzles in your mission to find your way to your story's end. What are you waiting for? The clock is ticking!
+                        </p>
+
+                        <div class="chips">
+                            <div class="chip" id="price" title="Party size">
+                                <span class="material-symbols-rounded">group</span>
+                                <span class="monospace">2-8</span>
+                            </div>
+                            <div class="chip" id="price" title="Approximate price per person">
+                                <span class="material-symbols-rounded">attach_money</span>
+                                <span class="monospace">55 / head</span>
+                            </div>
+                            <div class="chip" id="duration" title="Approximate duration of experience">
+                                <span class="material-symbols-rounded">timer</span>
+                                <span class="monospace">1-2 hrs</span>
+                            </div>
+                            <div class="chip" id="distance" title="Distance from Sandpearl Resort">
+                                <span class="material-symbols-rounded">distance</span>
+                                <span class="monospace">3.6 miles</span>
+                            </div>
+                            <div class="chip" id="drive-time" title="Travel time by car">
+                                <span class="material-symbols-rounded">directions_car</span>
+                                <span class="monospace">15 min</span>
+                            </div>
+                        </div>
+
+                        <div id="button-container" class="flex-container-row">
+                            <button class="filled-button" onclick="window.open('https://www.theexitgamesfl.com/').focus();">
+                                <span class="material-symbols-rounded">open_in_new</span> Website
+                            </button>
+
+                            <button class="outlined-button"
+                                onclick="window.open('https://maps.app.goo.gl/noyFeB6e6sVD9BHp6').focus();">
+                                <span class="material-symbols-rounded">travel_explore</span> Map
+                            </button>
+
+                            <button class="outlined-button" onclick="window.open('tel:727-601-4978').focus();">
+                                <span class="material-symbols-rounded">phone</span> Call <span
+                                    class="monospace">727-601-4978</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <span class="subsection-image" id="escape-room-image"></span>
+                </div>
+
+                <span class="section-divider"></span>
+
+                <div id="segway" class="image-subsection">
+                    <div class="subsection-body">
+                        <h3>Sea Screamers of Clearwater</h3>
+                        <i>Clearwater Beach Municipal Marina, 25 Causeway Blvd, Clearwater, FL 33767</i>
+
+                        <div class="booking-warning">
+                            <span class="material-symbols-rounded">warning</span>
+                            This experience requires advance booking.
+                        </div>
+
+                        <p>
+                            Sea Screamer is the largest, most exciting dolphin tour speed boat in Clearwater.  Our 1 hour dolphin tour is fully narrated and includes sightseeing throughout Clearwater Harbor including celebrity waterfront homes, and historic locations. Sea Screamer's 73ft. Deep-V design is perfect for the open waters of the Gulf of Mexico where we'll rendezvous with beautiful Atlantic Bottlenose Dolphins.
+                        </p>
+
+                        <div class="chips">
+                            <div class="chip" id="price" title="Approximate price per person">
+                                <span class="material-symbols-rounded">attach_money</span>
+                                <span class="monospace">40 / head</span>
+                            </div>
+                            <div class="chip" id="duration" title="Approximate duration of experience">
+                                <span class="material-symbols-rounded">timer</span>
+                                <span class="monospace">1 hr</span>
+                            </div>
+                            <div class="chip" id="distance" title="Distance from Sandpearl Resort">
+                                <span class="material-symbols-rounded">distance</span>
+                                <span class="monospace">0.5 miles</span>
+                            </div>
+                            <div class="chip" id="walk-time" title="Travel time on foot">
+                                <span class="material-symbols-rounded">directions_walk</span>
+                                <span class="monospace">10 min</span>
+                            </div>
+                            <div class="chip" id="drive-time" title="Travel time by car">
+                                <span class="material-symbols-rounded">directions_car</span>
+                                <span class="monospace">5 min</span>
+                            </div>
+                        </div>
+
+                        <div id="button-container" class="flex-container-row">
+                            <button class="filled-button" onclick="window.open('https://seascreamer.com/').focus();">
+                                <span class="material-symbols-rounded">open_in_new</span> Website
+                            </button>
+
+                            <button class="outlined-button"
+                                onclick="window.open('https://maps.app.goo.gl/5TeBmHrBs6mZVVPv6').focus();">
+                                <span class="material-symbols-rounded">travel_explore</span> Map
+                            </button>
+
+                            <button class="outlined-button" onclick="window.open('tel:727-447-7200').focus();">
+                                <span class="material-symbols-rounded">phone</span> Call <span
+                                    class="monospace">727-447-7200</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <span class="subsection-image" id="sea-screamers-image"></span>
+                </div>
+
+                <span class="section-divider"></span>
+
+                <div id="Pier60" class="image-subsection">
+                    <div class="subsection-body">
+                        <h3>Pier 60</h3>
+                        <i>7 Cswy. Blvd, Clearwater Beach, FL 33767</i>
+                        
+                        <p>
+                            Pier 60 is a top attraction in the area, with a 1,080-foot fishing pier and a recreational park with telescopes and covered pavilions. The Pier 60 bait house offers bait, fishing tackle, T-shirts, souvenirs, drinks and snacks, as well as rental equipment. Staff members are knowledgeable and eager to assist visitors. Pier 60's many lights make it ideal for night fishing. Kids will love the shaded playground, one of largest beach playgrounds on the west coast of Florida.
+                            <br><br>
+                            Sunsets at Pier 60, a Clearwater Beach tradition, offers entertainment every night, from two hours before sunset until two hours after sunset. The beautiful view of the sunset makes for a perfect way to celebrate the end of the day. The park is open 6 a.m. to 9 p.m. every day.
+                        </p>
+
+                        <div class="chips">
+                            <div class="chip" id="price" title="Approximate price per person">
+                                <span class="material-symbols-rounded">attach_money</span>
+                                <span class="monospace">Free</span>
+                            </div>
+                            <div class="chip" id="duration" title="Approximate duration of experience">
+                                <span class="material-symbols-rounded">timer</span>
+                                <span class="monospace">1 hr+</span>
+                            </div>
+                            <div class="chip" id="distance" title="Distance from Sandpearl Resort">
+                                <span class="material-symbols-rounded">distance</span>
+                                <span class="monospace">0.5 miles</span>
+                            </div>
+                            <div class="chip" id="walk-time" title="Travel time on foot">
+                                <span class="material-symbols-rounded">directions_walk</span>
+                                <span class="monospace">10 min</span>
+                            </div>
+                            <div class="chip" id="drive-time" title="Travel time by car">
+                                <span class="material-symbols-rounded">directions_car</span>
+                                <span class="monospace">5 min</span>
+                            </div>
+                        </div>
+
+                        <div id="button-container" class="flex-container-row">
+                            <button class="filled-button" onclick="window.open('https://www.visitstpeteclearwater.com/profile/pier-60-clearwater-beach/139755').focus();">
+                                <span class="material-symbols-rounded">open_in_new</span> Website
+                            </button>
+
+                            <button class="outlined-button"
+                                onclick="window.open('https://maps.app.goo.gl/t3NxDvcpFgUsj3n37').focus();">
+                                <span class="material-symbols-rounded">travel_explore</span> Map
+                            </button>
+
+                            <button class="outlined-button" onclick="window.open('tel:727-871-8060').focus();">
+                                <span class="material-symbols-rounded">phone</span> Call <span
+                                    class="monospace">727-871-8060</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <span class="subsection-image" id="pier60-image"></span>
+                </div>
+
+                <span class="section-divider"></span>
+
+                <div id="Pier60" class="image-subsection">
+                    <div class="subsection-body">
+                        <h3>Moccasin Lake Nature Park</h3>
+                        <i>2750 Park Trail Ln, Clearwater, FL 33759</i>
+                        <p>
+                            Moccasin Lake is a 51-acre nature preserve with trails and boardwalks under a canopy of mature oaks and across ponds and creeks, with an array of wildlife, including gopher turtles, raccoons, and many birds. It is home to several injured birds of prey. The park offers classes, programs, camps and meeting/reception rentals with both indoor and outdoor meeting space. Learn more about the different animals and habitats at the park in the Moccasin Lake Discovery Center.
+                        </p>
+
+                        <div class="chips">
+                            <div class="chip" id="price" title="Approximate price per person">
+                                <span class="material-symbols-rounded">attach_money</span>
+                                <span class="monospace">Free</span>
+                            </div>
+                            <div class="chip" id="duration" title="Approximate duration of experience">
+                                <span class="material-symbols-rounded">timer</span>
+                                <span class="monospace">1 hr+</span>
+                            </div>
+                            <div class="chip" id="distance" title="Distance from Sandpearl Resort">
+                                <span class="material-symbols-rounded">distance</span>
+                                <span class="monospace">8.5 miles</span>
+                            </div>
+                            <div class="chip" id="drive-time" title="Travel time by car">
+                                <span class="material-symbols-rounded">directions_car</span>
+                                <span class="monospace">25 min</span>
+                            </div>
+                        </div>
+
+                        <div id="button-container" class="flex-container-row">
+                            <button class="filled-button" onclick="window.open('https://www.myclearwaterparks.com/Parks-and-Trails/Moccasin-Lake-Nature-Park').focus();">
+                                <span class="material-symbols-rounded">open_in_new</span> Website
+                            </button>
+
+                            <button class="outlined-button"
+                                onclick="window.open('https://maps.app.goo.gl/fzitbzME9hUVqCRs6').focus();">
+                                <span class="material-symbols-rounded">travel_explore</span> Map
+                            </button>
+
+                            <button class="outlined-button" onclick="window.open('tel:727-562-4315').focus();">
+                                <span class="material-symbols-rounded">phone</span> Call <span
+                                    class="monospace">727-562-4315</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <span class="subsection-image" id="moccasin-lake-image"></span>
+                </div>
             </div>
         </section>
 
-        <section id="faq">
+        <section id="faq" title="Copy link to this section">
             <div class="section-header link-copy">
                 <h2>Frequently Asked Questions</h2>
                 <span class="material-symbols-rounded hidden">link</span>

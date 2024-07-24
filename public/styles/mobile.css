@@ -8,17 +8,17 @@
     #image{
         display: none;
     }
+    
+
     blockquote{
         margin: 0;
         padding:1.2em 0px 1.2em 75px;
     }
-    #main-content #venue .section-body #calypso{
+    .image-subsection{
         grid-template-columns: 1fr;
+        gap: 0;
     }
-    #main-content #venue .section-body #sandpearl{
-        grid-template-columns: 1fr;
-    }
-    #main-content #itinerary #itinerary-body{
+    #itinerary-body{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
@@ -29,6 +29,18 @@
         height: fit-content !important;
     }
     .dropdown .material-symbols-rounded{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .subsection-image{
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 675px) {
+    #settings{
         display: none;
     }
 }

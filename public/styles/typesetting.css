@@ -69,6 +69,7 @@ a:hover {
 
 .monospace {
     font-family: 'Noto', monospace;
+    font-size: inherit;
 }
 
 blockquote{

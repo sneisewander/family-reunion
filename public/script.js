@@ -23,6 +23,8 @@ if (section){
     },'slow')
 }
 
+
+
 $("#back-to-top").on("click", () => {
     $('#main-content').animate({
         scrollTop: $("#main-content").offset().top
