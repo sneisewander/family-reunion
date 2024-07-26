@@ -210,19 +210,19 @@ body{
 }
 
 #sandpearl-image{
-    background-image: url('../assets/sandpearl-resort.jpg');
+    background-image: url('../assets/sandpearl-resort.webp');
 }
 
 #calypso-image{
-    background-image: url('../assets/calypso.jpg');
+    background-image: url('../assets/calypso.webp');
 }
 
 #aquarium-image{
-    background-image: url('../assets/cwa.jpg');
+    background-image: url('../assets/clearwater2.webp');
 }
 
 #segway-image{
-    background-image: url('../assets/segway.jpg');
+    background-image: url('../assets/segway.webp');
 }
 
 #escape-room-image{
@@ -230,15 +230,15 @@ body{
 }
 
 #sea-screamers-image{
-    background-image: url('../assets/sea-screamers.jpg');
+    background-image: url('../assets/sea-screamers.webp');
 }
 
 #pier60-image{
-    background-image: url('../assets/pier60.jpg');
+    background-image: url('../assets/pier60.webp');
 }
 
 #moccasin-lake-image{
-    background-image: url('../assets/moccasin-lake.jpg');
+    background-image: url('../assets/moccasin-lake.webp');
 }
 
 .booking-warning{

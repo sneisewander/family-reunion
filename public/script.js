@@ -102,7 +102,7 @@ try {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         $('#toggle-color-mode span').text('dark_mode')
         colorMode = 'dark'
-        $('#logo').css('content', 'url(assets/RAYNORWWWHITE.png)')
+        $('#logo').css('content', 'url(assets/RAYNORWWWHITE.webp)')
     }
     if (window.matchMedia && window.matchMedia('(prefers-contrast: less)').matches) contrastIndex = 1
     else if (window.matchMedia && window.matchMedia('(prefers-contrast: less)').matches) contrastIndex = 2
@@ -119,12 +119,12 @@ $("#toggle-color-mode").on("click", () => {
         case "light_mode":
             $('#toggle-color-mode span').text('dark_mode')
             colorMode = 'dark'
-            $('#logo').css('content', 'url(assets/RAYNORWWWHITE.png)')
+            $('#logo').css('content', 'url(assets/RAYNORWWWHITE.webp)')
             break
         case "dark_mode":
             $('#toggle-color-mode span').text('light_mode')
             colorMode = 'light'
-            $('#logo').css('content', 'url(assets/RAYNORWW1COLOR.png)')
+            $('#logo').css('content', 'url(assets/RAYNORWW1COLOR.webp)')
             break
     }
 
