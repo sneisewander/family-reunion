@@ -20,7 +20,6 @@ body{
     width: 20vw;
     max-width: 360px;
     height: 100vh;
-    min-height: 670px;
     padding: 18px;
 
     background-color: rgb(var(--md-sys-color-surface-container-low));
