@@ -17,13 +17,11 @@ body{
 /* #region Nav Drawer */
 .m3-nav-drawer {
     box-sizing: border-box;
-    min-width: 360px;
+    width: 20vw;
+    max-width: 360px;
     height: 100vh;
     min-height: 670px;
-    padding: 0px 28px 0px 28px;
-
-    /* border-top-right-radius: 28px;
-    border-bottom-right-radius: 28px; */
+    padding: 18px;
 
     background-color: rgb(var(--md-sys-color-surface-container-low));
     color: rgb(var(--md-sys-color-on-surface-variant));
@@ -32,21 +30,22 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    text-align: center;
     gap: 12px;
 }
 
-.m3-nav-drawer a{
-    padding: 28px 0px 0px 0px;
-    width: 260px;
-}
-
 .m3-nav-drawer .fab{
+    margin-top: 12px;
     width: 100%;
 }
 
 .m3-nav-drawer img{
-    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    width: auto;
+    max-height: 100px;
 }
+
 /* #endregion Nav Drawer */
 
 /* #region Main Content Styles */
