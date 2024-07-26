@@ -33,6 +33,9 @@
     .subsection-image{
         display: none;
     }
+    .image-subsection{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (max-height: 600px) {
