@@ -43,7 +43,11 @@ body{
     box-sizing: border-box;
     padding: 12px;
     width: auto;
-    max-height: 100px;
+    max-height: 90px;
+}
+
+.m3-nav-drawer i{
+    font-size: .8rem;
 }
 
 /* #endregion Nav Drawer */
@@ -88,7 +92,7 @@ body{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "content image";
-    gap: 12px;
+    gap: 18px;
 }
 
 .subsection-body{

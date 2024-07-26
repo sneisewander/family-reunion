@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
     .m3-nav-drawer{
         display: none;
     }
@@ -13,10 +13,6 @@
     blockquote{
         margin: 0;
         padding:1.2em 0px 1.2em 75px;
-    }
-    .image-subsection{
-        grid-template-columns: 1fr;
-        gap: 0;
     }
     #itinerary-body{
         grid-template-columns: 1fr 1fr;
@@ -39,7 +35,7 @@
     }
 }
 
-@media only screen and (max-height: 675px) {
+@media only screen and (max-height: 600px) {
     #settings{
         display: none;
     }
