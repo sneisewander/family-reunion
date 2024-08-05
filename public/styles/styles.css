@@ -185,6 +185,10 @@ body{
     color: white;
 }
 
+#main-content #hero h2{
+    color: white;
+}
+
 #main-content #hero p{
     max-width: 650px;
     text-align: center;
