@@ -196,8 +196,14 @@ body{
     color: white;
 }
 
-#main-content #hero button{
-    min-width: 300px;
+#main-content #hero .fab{
+    padding: 0px 20px;
+}
+
+#main-content #hero .outlined-button{
+    height: 100%;
+    border-color: white;
+    color: white;
 }
 
 #itinerary-body{
